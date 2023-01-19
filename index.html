@@ -1,105 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phubate's portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--หัวเรื่อง-->
-    <header>
-      <div class="container">
-        <nav>
-          <img src="images/logo.png" alt="logo" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-         <br>
-          <h1>Hi I'm <span>Phubate Nimnuan</span> <br />From Kanchanaburi</h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phubate's portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--หัวเรื่อง-->
+  <header>
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <br>
+        <h1>Hi I'm <span>Phubate Nimnuan</span> <br />From Kanchanaburi</h1>
       </div>
-    </header>
-    <!--about-->
-    <div class="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/me2.png" alt="user" />
+    </div>
+  </header>
+  <!--about-->
+  <div class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/me2.png" alt="user" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">about me</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+            ipsa quod. Vitae nisi id odit quibusdam atque. Consequuntur,
+            recusandae. Repellat aut vel, adipisci voluptas atque tempore.
+            Cumque iste autem aliquam!
+          </p>
+          <div class="tap-title">
+            <p class="tap-link active-link" onclick="opentab('Skill')">Skill</p>
+            <p class="tap-link " onclick="opentab('Experience')">Experience</p>
+            <p class="tap-link " onclick="opentab('Educetion')">Educetion</p>
           </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">about me</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
-              ipsa quod. Vitae nisi id odit quibusdam atque. Consequuntur,
-              recusandae. Repellat aut vel, adipisci voluptas atque tempore.
-              Cumque iste autem aliquam!
-            </p>
-            <div class="tap-title">
-              <p class="tap-link active-link" onclick="opentab('Skill')">Skill</p>
-              <p class="tap-link "onclick="opentab('Experience')">Experience</p>
-              <p class="tap-link "onclick="opentab('Educetion')">Educetion</p>
-            </div>
-            <div class="tap-content active-tab" id="Skill">
-                <ul>
-                    <li><span>Figma </span><br />Disigning</li>
-                    <li><span>HTML</span><br />Beginner</li>
-                    <li><span>Java</span><br />Beginner</li>
-                  </ul>
-            </div>
-            <div class="tap-content " id="Experience">
-                <ul>
-                    <li><span>Lep Database Design</span><br> PowerBuy</li>
-                    <li> <span>lep Web Design</span><br> Form Covid-19 notifly <br> Loykratong online </li>
-                </ul>
-            </div>
-            <div class="tap-content " id="Educetion">
-                <ul>
-                    <li><span>2017-2022</span><br />Grad 6 - Grad 11 <br> SOMDEJPHRAPIYAMAHARAJROMMNEEYAKHAT School </li>
-                   
-                    <li><span>2022-Present</span><br/>Softwere Engineering</li>
-                  </ul>
-            </div>
+          <div class="tap-content active-tab" id="Skill">
+            <ul>
+              <li><span>Figma </span><br />Disigning</li>
+              <li><span>HTML</span><br />Beginner</li>
+              <li><span>Java</span><br />Beginner</li>
+            </ul>
+          </div>
+          <div class="tap-content " id="Experience">
+            <ul>
+              <li><span>Lep Database Design</span><br> PowerBuy</li>
+              <li> <span>lep Web Design</span><br> Form Covid-19 notifly <br> Loykratong online </li>
+            </ul>
+          </div>
+          <div class="tap-content " id="Educetion">
+            <ul>
+              <li><span>2017-2022</span><br />Grad 6 - Grad 11 <br> SOMDEJPHRAPIYAMAHARAJROMMNEEYAKHAT School </li>
+
+              <li><span>2022-Present</span><br />Softwere Engineering</li>
+            </ul>
+          </div>
         </div>
-        
+
       </div>
-    
-       
+
+
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--project-->
+  <div class="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services </h1>
+      <div class="services-list">
+
+        <div class="services-item">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Odio molestias in labore obcaecati,
+            suscipit at maxime iste tenetur ipsam vel veritatis doloribus,
+            eius autem quam harum assumenda, itaque dolorem error?</p>
+          <a href="#">Learn more ...</a>
+        </div>
+
+        <div class="services-item">
+          <i class="fa-solid fa-code"></i>
+          <h2>UX/UI</h2>
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Odio molestias in labore obcaecati,
+            suscipit at maxime iste tenetur ipsam vel veritatis doloribus,
+            eius autem quam harum assumenda, itaque dolorem error?</p>
+          <a href="#">Learn more ...</a>
+        </div>
+
+        <div class="services-item">
+          <i class="fa-solid fa-code"></i>
+          <h2>Project</h2>
+          <p>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Odio molestias in labore obcaecati,
+            suscipit at maxime iste tenetur ipsam vel veritatis doloribus,
+            eius autem quam harum assumenda, itaque dolorem error?</p>
+          <a href="#">Learn more ...</a>
+        </div>
+
       </div>
+    </div>
+  </div>
+
+
+  <!--portfolio-->
+  <div class="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png" alt="work-1"/>
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+              elit. Sed deserunt quos veritatis quod voluptates cum, 
+              ea minus inventore dolor harum velit recusandae tempora,
+               sequi et sit fugit rem iusto minima.</p>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png" alt="work-2"/>
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Sed deserunt quos veritatis quod voluptates cum, ea minus
+                inventore dolor harum velit recusandae tempora, sequi et
+                 sit fugit rem iusto minima.</p>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png" alt="work-3"/>
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Sed deserunt quos veritatis quod voluptates cum, ea minus 
+              inventore dolor harum velit recusandae tempora, sequi et 
+              sit fugit rem iusto minima.</p>
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">see more</a>
+    </div>
+  </div>
+  <!--contact-->
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">contact me</h1>
+          <p><i class="fa-solid fa-envelope"></i> Fourza12poobate@hmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> 0811656130</p>
+          <div class="social-icon">
+            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-paper-plane"></i></a>
+            <a href="https://www.facebook.com/poobate.nimnuan"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@pla_shon?lang=en"><i class="fa-brands fa-tiktok"></i></a>         
+          </div>
+          <br><center><a href="downloads/my-cv.pdf" class="btn btn2">Downloads CV</a></center>
+        </div>
+        <div class="contact-right">
+          <form action="">
+            <input type="text" name="name" placeholder="Your name" required/>
+            <input type="text" name="email" placeholder="Your email" required/>
+            <textarea name="message" id="message"  rows="6"></textarea>
+            <button type="submit"class="btn btn2">Submit</button>
+          </form>
         </div>
       </div>
     </div>
-    <!--project-->
-    <!--portfolio-->
-    <!--contact-->
+  </div>
+  <!--copyright-->
+  <div class="copyright">
+    <p>copyright & copy; Phubate. Made with <i class="fa-solid fa-hand"></i> by Phubate</p>
+  </div>
 
-    <script>
-        const taplinks = document.getElementsByClassName("tap-link");
-        const tapcontents = document.getElementsByClassName("tap-content");
-        const opentab = (tapname) =>{
-            for(taplink of taplinks){
-                taplink.classList.remove("active-link");
-            }
-            for(tapcontent of tapcontents){
-                tapcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tapname).classList.add("active-tab");
+  <script>
+    const taplinks = document.getElementsByClassName("tap-link");
+    const tapcontents = document.getElementsByClassName("tap-content");
+    const opentab = (tapname) => {
+      for (taplink of taplinks) {
+        taplink.classList.remove("active-link");
+      }
+      for (tapcontent of tapcontents) {
+        tapcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tapname).classList.add("active-tab");
 
-        }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
